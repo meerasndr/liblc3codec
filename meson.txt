@@ -16,7 +16,7 @@ src = ['Common/DctIV.cpp', 'Common/Lc3Config.cpp', 'Common/Tables/BandIndexTable
  'Decoder/BitReader.cpp', 'Decoder/Lc3Decoder.cpp', 'Decoder/MdctDec.cpp',
  'Decoder/SideInformation.hpp'
  ]
-executable()
+executable() ???
 
 incdir = include_directories('Api', 'Common', 'Common/Tables', 'Common/KissFft')
 CFLAGS=-Werror, -Wmissing-braces -Wno-unused-parameter, -Wno-#warnings, -Wuninitialized, -Wno-self-assign, -Wno-implicit-fallthrough
