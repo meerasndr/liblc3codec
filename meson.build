@@ -1,7 +1,5 @@
 project('liblc3codec', 'cpp', license: 'Apache-2.0' )
 cc = meson.get_compiler('cpp')
-CFLAGS=-Werror, -Wmissing-braces -Wno-unused-parameter, -Wno-#warnings, -Wuninitialized, -Wno-self-assign, -Wno-implicit-fallthrough
-
 codec_sources = ['Common/DctIV.cpp', 'Common/Lc3Config.cpp', 'Common/Tables/BandIndexTables.cpp',
  'Common/Tables/LongTermPostfilterCoefficients.cpp', 'Common/Tables/MdctWindows.cpp',
  'Common/Tables/SnsQuantizationTables.cpp', 'Common/Tables/SpectralDataTables.cpp',
@@ -19,8 +17,6 @@ codec_sources = ['Common/DctIV.cpp', 'Common/Lc3Config.cpp', 'Common/Tables/Band
 
 lc3codec = library('lc3codec',
   codec_sources,
-  install: true,
-  install_dir: plugins_install_dir,
   )
 
-incdir = include_directories('Api', 'Common', 'Common/Tables', 'Common/KissFft, TestSupport')
+incdir = include_directories('Api', 'Common', 'Common/Tables')
