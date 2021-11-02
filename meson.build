@@ -11,11 +11,10 @@ codec_sources = ['Common/DctIV.cpp', 'Common/Lc3Config.cpp', 'Common/Tables/Band
  'Encoder/BandwidthDetector.cpp', 'Encoder/EncoderFrame.cpp', 'Encoder/Lc3Encoder.cpp',
  'Encoder/LongTermPostfilter.cpp', 'Encoder/NoiseLevelEstimation.cpp',
  'Encoder/SpectralNoiseShaping.cpp', 'Encoder/TemporalNoiseShaping.cpp',
- 'Decoder/ArithmeticDec.cpp', 'Decoder/DecoderTop.cpp', 'Decoder/LongTermPostfilter.cpp',
- 'Decoder/PacketLossConcealment.cpp', 'Decoder/SpectralNoiseShaping.cpp', 'Decoder/DecoderFrame.cpp',
- 'Decoder/MPVQ.cpp', 'Decoder/SideInformation.cpp', 'Decoder/ResidualSpectrum.cpp',
- 'Decoder/BitReader.cpp', 'Decoder/Lc3Decoder.cpp', 'Decoder/MdctDec.cpp',
- 'Decoder/SideInformation.hpp'
+ 'Decoder/ArithmeticDec.cpp', 'Decoder/BitReader.cpp', 'Decoder/DecoderFrame.cpp', 'Decoder/DecoderTop.cpp',
+ 'Decoder/Lc3Decoder.cpp',  'Decoder/LongTermPostfilter.cpp', 'Decoder/MdctDec.cpp', 'Decoder/MPVQ.cpp',
+ 'Decoder/PacketLossConcealment.cpp', 'Decoder/ResidualSpectrum.cpp', 'Decoder/SpectralNoiseShaping.cpp',
+  'Decoder/SideInformation.cpp'
  ]
 
 lc3codec = library('lc3codec',
