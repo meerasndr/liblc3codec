@@ -17,7 +17,9 @@
  */
 
 #include "Datapoints.hpp"
+#if 0
 #include <base/logging.h>
+#endif
 #include <iomanip>
 #include <sstream>
 #include <iostream>
@@ -67,7 +69,9 @@ void DatapointContainer::log(const char* label, const void* pData,  uint16_t siz
                 << std::hex
                 << static_cast<int>(pByteData[byteNr]);
     }
+#if 0
     LOG(INFO) << label << "[" << sizeInBytes << "]:" << vStream.str();
+#endif
 }
 
 

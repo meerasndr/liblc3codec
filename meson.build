@@ -34,6 +34,7 @@ codec_sources = [
   'Encoder/NoiseLevelEstimation.cpp',
   'Encoder/SpectralNoiseShaping.cpp',
   'Encoder/TemporalNoiseShaping.cpp',
+  'TestSupport/DatapointsAndroid.cpp',
 ]
 
 codec_headers = [
